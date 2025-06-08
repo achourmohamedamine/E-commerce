@@ -1,0 +1,39 @@
+.sidebar-title {
+    font-size: 22px;
+    font-weight: normal;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar-items {
+    margin-top: 20px;
+  }
+  
+  .sidebar-label-container {
+    display: flex;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .sidebar-label-container span{
+    position: relative;
+    right: 100px;
+    font-family:'Times New Roman', Times, serif;
+    border-radius: 50%;
+    background-color: #ffffff;
+
+  }
+  .all {
+    background: linear-gradient(blue, crimson);
+  }
+  .sidebar-label-container:hover input ~ .checkmark {
+    background-color: #fffdfd;
+  }
+.sidebar-label-container input:checked{
+    color: blue;
+}
+  
