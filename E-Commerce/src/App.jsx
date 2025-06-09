@@ -50,7 +50,7 @@ function App() {
 
     return filteredItems.map(({ img, title, star, reviews, prevPrice, newPrice, company, color, category }) => (
       <Card
-        key={title}
+        key={Math.random()}
         img={img}
         title={title}
         star={star}
@@ -71,9 +71,9 @@ function App() {
   return (
     <>
       <SideBar onChange={handleChange} />
-      <Nav />
-      <Recommended />
-      <Products />
+      <Nav query={query} handleInputChange={handleInputChange}/>
+      <Recommended onClick={handleClick} />
+      <Products finalFilteredProducts={finalFilteredProducts} />
     </>
   );
 }

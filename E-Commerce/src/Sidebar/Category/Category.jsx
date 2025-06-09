@@ -12,7 +12,7 @@ function Category({onChange}) {
           <input type="radio" name="category" value="all" onChange={onChange} />
           <span className='checkmark'>All</span>
         </label>
-        <Input onChange={onChange} value="Sneakers" name="test" title="Sneakers"></Input>
+        <Input onChange={onChange} value="sneakers" name="test" title="sneakers"></Input>
         <Input onChange={onChange} value="Heals" name="test" title="Heals"></Input>
         <Input onChange={onChange} value="Flats" name="test" title="Flats"></Input>
         <Input onChange={onChange} value="Sandals" name="test" title="Sandals"></Input>
