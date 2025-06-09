@@ -70,10 +70,10 @@ function App() {
 
   return (
     <>
-      <SideBar onChange={handleChange} onClick={handleClick} />
-      <Nav onInputChange={handleInputChange} />
+      <SideBar onChange={handleChange} />
+      <Nav />
       <Recommended />
-      <Products products={finalFilteredProducts} />
+      <Products />
     </>
   );
 }
